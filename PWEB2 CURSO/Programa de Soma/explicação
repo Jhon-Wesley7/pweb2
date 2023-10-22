@@ -1,5 +1,0 @@
-Programa simples de soma, onde resolvi deixa-lo um pouco mais complexo justamente pra aprofundar os estudos na estilização da pagina com o CSS
-Na forma como foi feito, fugindo um pouco do basico (console.log, prompt, alert) e deixando mais interativo para com o usuario.
-Além disso, pensando em algo mais agradevel aos olhos, usando o JavaScript consegui deixar em tempo real a adição de numeros para a soma.
-Implementei também botões para fazer a função do prompt.
-Implementei também um botão para reiniciar a soma dos numeros postos caso queira fazer outra soma.
