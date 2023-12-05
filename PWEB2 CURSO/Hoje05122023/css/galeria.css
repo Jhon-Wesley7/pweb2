@@ -1,36 +1,48 @@
+* /* Reset de estilos padrão */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Estilos gerais para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
-    background-color: #413543;
+    background-color: rgb(80, 70, 70);
+    color: #fff;
 }
+
+/* Estilos para o cabeçalho */
 header {
     background-color: #1b1029;
     color: #bba2dc;
     text-align: center;
     padding: 16px;
 }
+
+/* Estilos para títulos e subtítulos */
 .titulo {
     font-size: 2.5em;
     margin: 16px 0;
+    color: #fff;
 }
+
 .subtitulo {
     margin: 0;
     margin-bottom: 8px;
     color: #f3f3f3;
 }
 
+/* Estilos para a seção de créditos */
 .creditos::before {
     content: "Imagens ©";
     font-weight: thin;
     color: #f3f3f3;
 }
+
 .creditos {
     margin: 0;
     background: #2b1a40;
@@ -41,13 +53,14 @@ header {
     top: 24px;
     right: 24px;
 }
+
 .creditos a {
     color: #F0EB8D;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Estiliza a seção da galeria */
+/* Estilos para a seção da galeria */
 #galeria {
     display: flex;
     flex-direction: row;
@@ -65,18 +78,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
+    border: 8px solid #964af3; /* Adiciona uma borda estilizada */
+    border-radius: 12px; /* Borda com cantos arredondados */
 }
+
 .texto-alternativo {
     color: #F0EB8D;
     padding: 16px 8px;
 }
+
 #imagem-principal img {
     max-width: 100%;
     max-height: 500px;
     margin-bottom: 20px;
+    border-radius: 8px; /* Cantos arredondados para a imagem */
 }
+
 #imagens {
     display: flex;
     flex-direction: column;
@@ -84,6 +102,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 #imagens img {
     width: 100px;
     height: 100px;
@@ -92,14 +111,17 @@ header {
     border: 3px solid white;
     transition: all 0.3s ease-in-out;
 }
+
 #imagens img:hover {
     border-color: #333;
     transform: scale(1.2);
 }
+
 #imagem-principal:hover .anterior,
 #imagem-principal:hover .proximo {
     display: block;
 }
+
 .anterior,
 .proximo {
     display: none;
@@ -112,25 +134,31 @@ header {
     position: absolute;
     padding: 16px;
 }
+
 .anterior span,
 .proximo span {
     padding: 0 8px;
     display: none;
 }
+
 .anterior {
     left: 48px;
 }
+
 .proximo {
     right: 48px;
 }
+
 .anterior:hover,
 .proximo:hover {
     background-color: #964af3;
 }
+
 .anterior:hover span,
 .proximo:hover span{
     display: inline-block;
 }
+
 #imagens img.selecionada {
     border-color: #964af3;
 }

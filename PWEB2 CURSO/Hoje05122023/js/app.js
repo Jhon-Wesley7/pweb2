@@ -27,6 +27,7 @@ const selecionarImagem = function() {
         imagem.classList = "";
     })
     todasImagens[idImagemAtiva].classList.add("")
+    textoAlternativo.innerHTML = todasImagens[idImagemAtiva].alt
 }
 
 btnProximo.addEventListener("click", proximaImagem)
@@ -35,6 +36,7 @@ btnAnterior.addEventListener("click", voltarImagem)
 todasImagens.forEach( function(imagem, numeroImage){
     imagem.addEventListener("click", function(){
         idImagemAtiva = numeroImage
+        textoAlternativo.innerHTML = todasImagens[idImagemAtiva].alt
         selecionarImagem()
     })
 })
